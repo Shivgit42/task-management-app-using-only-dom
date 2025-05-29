@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>TaskFlow</title>
+  </head>
+  <body>
+    <h1>🧠 TaskFlow</h1>
+    <div class="board">
+      <div class="column" data-status="to-start">
+        <h2 class="header blue">To Start</h2>
+        <button class="add-btn">+ Add New</button>
+        <form class="form hidden">
+          <input type="text" placeholder="Title" required />
+          <input type="text" placeholder="Description" required />
+          <select>
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+          </select>
+          <button type="submit">Add Task</button>
+        </form>
+        <div class="tasks"></div>
+      </div>
+      <div class="column" data-status="in-progress">
+        <h2 class="header yellow">In Progress</h2>
+        <button class="add-btn">+ Add New</button>
+        <form class="form hidden">
+          <input type="text" placeholder="Title" required />
+          <input type="text" placeholder="Description" required />
+          <select>
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+          </select>
+          <button type="submit">Add Task</button>
+        </form>
+        <div class="tasks"></div>
+      </div>
+      <div class="column" data-status="under-review">
+        <h2 class="header teal">Under Review</h2>
+        <button class="add-btn">+ Add New</button>
+        <form class="form hidden">
+          <input type="text" placeholder="Title" required />
+          <input type="text" placeholder="Description" required />
+          <select>
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+          </select>
+          <button type="submit">Add Task</button>
+        </form>
+        <div class="tasks"></div>
+      </div>
+      <div class="column" data-status="completed">
+        <h2 class="header green">Completed</h2>
+        <button class="add-btn">+ Add New</button>
+        <form class="form hidden">
+          <input type="text" placeholder="Title" required />
+          <input type="text" placeholder="Description" required />
+          <select>
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+          </select>
+          <button type="submit">Add Task</button>
+        </form>
+        <div class="tasks"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
